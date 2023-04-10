@@ -66,9 +66,9 @@ class Program
                                             Console.WriteLine("Your saved notes:");
                                             if (user.notes != null)
                                             {
-                                                foreach (string userNotes in user.notes)
+                                                for (int i = 1; i <= user.notes.Length;i++)
                                                 {
-                                                    Console.WriteLine(userNotes);
+                                                    Console.WriteLine($"NOTE {i}: {user.notes[i-1]}");
                                                 }
                                             }
                                             Console.WriteLine("OPTIONS\n[1] Write a Note \n[2]Check Notes \n[3] Exit");

@@ -18,7 +18,7 @@ namespace Note_Taking_App
         {
             this.username = username;
             this.password = password;
-            this.id = ++lastAssignedId;
+            id = ++lastAssignedId;
             this.notes = notes;
         }
     }
